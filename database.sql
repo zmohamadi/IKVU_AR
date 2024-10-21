@@ -1137,9 +1137,12 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE KEY `users_mobile_unique` (`mobile`) USING BTREE,
   UNIQUE KEY `users_email_unique` (`email`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
 
 /*Data for the table `users` */
+
+insert  into `users`(`id`,`firstname`,`lastname`,`photo`,`mobile`,`username`,`role_id`,`codemeli`,`email`,`count_presented`,`count_register`,`password`,`creator_id`,`editor_id`,`studentID`,`person_id`,`gender_id`,`resume`,`status_id`,`lang`,`deleted_at`,`created_at`,`updated_at`) values 
+(1,'مهدی','وثوقی','image71601727502574.jpg','09191964745','09191964745',4,'09191964745','sanegar.info@gmail.com',0,0,'$2y$12$onogYslcq05.1lR6PICdH.0V526DqEd11807W0KzgMZBSDPVhqD.a',NULL,NULL,NULL,NULL,NULL,NULL,1,'fa',NULL,NULL,NULL);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
