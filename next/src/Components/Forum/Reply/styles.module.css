@@ -1,0 +1,9 @@
+.mark{
+    height: 42px !important; 
+    border-radius: 7px !important
+}
+
+.mark_count{
+    border-radius: 7px !important;
+    font-weight: bold 
+}

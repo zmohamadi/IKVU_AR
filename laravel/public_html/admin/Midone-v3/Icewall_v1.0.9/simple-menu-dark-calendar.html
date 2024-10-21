@@ -1,0 +1,1467 @@
+<!DOCTYPE html>
+<!--
+Template Name: Icewall - HTML Admin Dashboard Template
+Author: Left4code
+Website: http://www.left4code.com/
+Contact: muhammadrizki@left4code.com
+Purchase: https://themeforest.net/user/left4code/portfolio
+Renew Support: https://themeforest.net/user/left4code/portfolio
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<html lang="en" class="dark">
+    <!-- BEGIN: Head -->
+    <head>
+        <meta charset="utf-8">
+        <link href="dist/images/logo.svg" rel="shortcut icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Icewall admin is super flexible, powerful, clean & modern responsive tailwind admin template with unlimited possibilities.">
+        <meta name="keywords" content="admin template, Icewall Admin Template, dashboard template, flat admin template, responsive admin template, web app">
+        <meta name="author" content="LEFT4CODE">
+        <title>داشبرد - ایس‌وال - قالب مدیریتی تیلوند اچ تی ام ال</title>
+        <!-- BEGIN: CSS Assets-->
+        <link rel="stylesheet" href="dist/css/app.css" />
+        <!-- END: CSS Assets-->
+    </head>
+    <!-- END: Head -->
+    <body class="main">
+        <!-- BEGIN: Mobile Menu -->
+        <div class="mobile-menu md:hidden">
+            <div class="mobile-menu-bar">
+                <a href="" class="flex ml-auto">
+                    <img alt="Icewall Tailwind HTML Admin Template" class="w-6" src="dist/images/logo.svg">
+                </a>
+                <a href="javascript:;" id="mobile-menu-toggler"> <i data-feather="bar-chart-2" class="w-8 h-8 text-white transform -rotate-90"></i> </a>
+            </div>
+            <ul class="border-t border-theme-2 py-5 hidden">
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="home"></i> </div>
+                        <div class="menu__title"> دشبرد <i data-feather="chevron-down" class="menu__sub-icon "></i> </div>
+                    </a>
+                    <ul class="">
+                        <li>
+                            <a href="side-menu-dark-dashboard-overview-1.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> نمای کل  1 </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-dashboard-overview-2.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> نمای کل  2 </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-dashboard-overview-3.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> نمای کل  3 </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="box"></i> </div>
+                        <div class="menu__title"> چینش منو <i data-feather="chevron-down" class="menu__sub-icon "></i> </div>
+                    </a>
+                    <ul class="">
+                        <li>
+                            <a href="side-menu-dark-dashboard-overview-1.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> منو کنار </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="simple-menu-dark-dashboard-overview-1.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> منو ساده </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="top-menu-dark-dashboard-overview-1.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> منو بالا </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="side-menu-dark-inbox.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="inbox"></i> </div>
+                        <div class="menu__title"> صندوق ورودی </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="side-menu-dark-file-manager.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="hard-drive"></i> </div>
+                        <div class="menu__title"> مدیریت فایل </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="side-menu-dark-point-of-sale.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="credit-card"></i> </div>
+                        <div class="menu__title"> نمای فروش </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="side-menu-dark-chat.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="message-square"></i> </div>
+                        <div class="menu__title"> چت </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="side-menu-dark-post.html" class="menu">
+                        <div class="menu__icon"> <i data-feather="file-text"></i> </div>
+                        <div class="menu__title"> پست </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="side-menu-dark-calendar.html" class="menu menu--active">
+                        <div class="menu__icon"> <i data-feather="calendar"></i> </div>
+                        <div class="menu__title"> تقویم </div>
+                    </a>
+                </li>
+                <li class="menu__devider my-6"></li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="edit"></i> </div>
+                        <div class="menu__title"> کراد <i data-feather="chevron-down" class="menu__sub-icon "></i> </div>
+                    </a>
+                    <ul class="">
+                        <li>
+                            <a href="side-menu-dark-crud-data-list.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title">  لیست داده </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-crud-form.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title">  فرم </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="users"></i> </div>
+                        <div class="menu__title"> کاربران <i data-feather="chevron-down" class="menu__sub-icon "></i> </div>
+                    </a>
+                    <ul class="">
+                        <li>
+                            <a href="side-menu-dark-users-layout-1.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> چینش 1 </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-users-layout-2.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> چینش 2 </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-users-layout-3.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> چینش 3 </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="trello"></i> </div>
+                        <div class="menu__title"> پروفایل <i data-feather="chevron-down" class="menu__sub-icon "></i> </div>
+                    </a>
+                    <ul class="">
+                        <li>
+                            <a href="side-menu-dark-profile-overview-1.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> نمای کل  1 </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-profile-overview-2.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> نمای کل  2 </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-profile-overview-3.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> نمای کل  3 </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="layout"></i> </div>
+                        <div class="menu__title"> صفحات <i data-feather="chevron-down" class="menu__sub-icon "></i> </div>
+                    </a>
+                    <ul class="">
+                        <li>
+                            <a href="javascript:;" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> ویزارد <i data-feather="chevron-down" class="menu__sub-icon "></i> </div>
+                            </a>
+                            <ul class="">
+                                <li>
+                                    <a href="side-menu-dark-wizard-layout-1.html" class="menu">
+                                        <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                        <div class="menu__title">چینش 1</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="side-menu-dark-wizard-layout-2.html" class="menu">
+                                        <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                        <div class="menu__title">چینش 2</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="side-menu-dark-wizard-layout-3.html" class="menu">
+                                        <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                        <div class="menu__title">چینش 3</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> بلاگ <i data-feather="chevron-down" class="menu__sub-icon "></i> </div>
+                            </a>
+                            <ul class="">
+                                <li>
+                                    <a href="side-menu-dark-blog-layout-1.html" class="menu">
+                                        <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                        <div class="menu__title">چینش 1</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="side-menu-dark-blog-layout-2.html" class="menu">
+                                        <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                        <div class="menu__title">چینش 2</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="side-menu-dark-blog-layout-3.html" class="menu">
+                                        <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                        <div class="menu__title">چینش 3</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> قیمت‌گذاری <i data-feather="chevron-down" class="menu__sub-icon "></i> </div>
+                            </a>
+                            <ul class="">
+                                <li>
+                                    <a href="side-menu-dark-pricing-layout-1.html" class="menu">
+                                        <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                        <div class="menu__title">چینش 1</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="side-menu-dark-pricing-layout-2.html" class="menu">
+                                        <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                        <div class="menu__title">چینش 2</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> فاکتور <i data-feather="chevron-down" class="menu__sub-icon "></i> </div>
+                            </a>
+                            <ul class="">
+                                <li>
+                                    <a href="side-menu-dark-invoice-layout-1.html" class="menu">
+                                        <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                        <div class="menu__title">چینش 1</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="side-menu-dark-invoice-layout-2.html" class="menu">
+                                        <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                        <div class="menu__title">چینش 2</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> پرسش و پاسخ <i data-feather="chevron-down" class="menu__sub-icon "></i> </div>
+                            </a>
+                            <ul class="">
+                                <li>
+                                    <a href="side-menu-dark-faq-layout-1.html" class="menu">
+                                        <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                        <div class="menu__title">چینش 1</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="side-menu-dark-faq-layout-2.html" class="menu">
+                                        <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                        <div class="menu__title">چینش 2</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="side-menu-dark-faq-layout-3.html" class="menu">
+                                        <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                        <div class="menu__title">چینش 3</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="login-dark-login.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> ورود </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login-dark-register.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> ثبت نام </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="main-dark-error-page.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> صفحه خطا </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-update-profile.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> بروزرسانی پروفایل </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-change-password.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> تغییر رمزعبور </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu__devider my-6"></li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="inbox"></i> </div>
+                        <div class="menu__title"> کامپوننت‌ها <i data-feather="chevron-down" class="menu__sub-icon "></i> </div>
+                    </a>
+                    <ul class="">
+                        <li>
+                            <a href="javascript:;" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> جدول <i data-feather="chevron-down" class="menu__sub-icon "></i> </div>
+                            </a>
+                            <ul class="">
+                                <li>
+                                    <a href="side-menu-dark-regular-table.html" class="menu">
+                                        <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                        <div class="menu__title"> جدول ساده </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="side-menu-dark-tabulator.html" class="menu">
+                                        <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                        <div class="menu__title"> تیبللاتور </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> همپوشانی <i data-feather="chevron-down" class="menu__sub-icon "></i> </div>
+                            </a>
+                            <ul class="">
+                                <li>
+                                    <a href="side-menu-dark-modal.html" class="menu">
+                                        <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                        <div class="menu__title"> مودال </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="side-menu-dark-slide-over.html" class="menu">
+                                        <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                        <div class="menu__title"> اسلاید اور </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="side-menu-dark-notification.html" class="menu">
+                                        <div class="menu__icon"> <i data-feather="zap"></i> </div>
+                                        <div class="menu__title"> اطلاعیه‌ها </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-accordion.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> آکاردیون </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-button.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> دکمه </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-alert.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> هشدار </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-progress-bar.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> نوار پیشرفت </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-tooltip.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> تولتیپ </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-dropdown.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> دراپ‌دوان </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-typography.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> تایپوگرافی </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-icon.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> ایکن </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-loading-icon.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> ایکن لودینگ </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="sidebar"></i> </div>
+                        <div class="menu__title"> فرم‌ها <i data-feather="chevron-down" class="menu__sub-icon "></i> </div>
+                    </a>
+                    <ul class="">
+                        <li>
+                            <a href="side-menu-dark-regular-form.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> فرم ساده </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-datepicker.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> انتخابگر زمان </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-tail-select.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> انتخابگر تیل </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-file-upload.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title">آپلود فایل </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-wysiwyg-editor.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> ادیتور ویسیویگ </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-validation.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> اعتبارسنجی </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" class="menu">
+                        <div class="menu__icon"> <i data-feather="hard-drive"></i> </div>
+                        <div class="menu__title"> ویجت‌ها <i data-feather="chevron-down" class="menu__sub-icon "></i> </div>
+                    </a>
+                    <ul class="">
+                        <li>
+                            <a href="side-menu-dark-chart.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> نمودار </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-slider.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> اسلایدر </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="side-menu-dark-image-zoom.html" class="menu">
+                                <div class="menu__icon"> <i data-feather="activity"></i> </div>
+                                <div class="menu__title"> بزرگنمایی تصویر </div>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- END: Mobile Menu -->
+        <!-- BEGIN: Top Bar -->
+        <div class="top-bar-boxed border-b border-theme-2 -mt-7 md:-mt-5 -mx-3 sm:-mx-8 px-3 sm:px-8 md:pt-0 mb-12">
+            <div class="h-full flex items-center">
+                <!-- BEGIN: Logo -->
+                <a href="" class="-intro-x hidden md:flex">
+                    <img alt="Icewall Tailwind HTML Admin Template" class="w-6" src="dist/images/logo.svg">
+                    <span class="text-white text-lg mr-3 adjust "> ایس<span class="font-medium">وال</span> </span>
+                </a>
+                <!-- END: Logo -->
+                <!-- BEGIN: Breadcrumb -->
+                <div class="-intro-x breadcrumb ml-auto"> <a href=""> اپلیکیشن </a> <i data-feather="chevron-left" class="breadcrumb__icon"></i> <a href="" class="breadcrumb--active">داشبرد</a> </div>
+                <!-- END: Breadcrumb -->
+                <!-- BEGIN: Search -->
+                <div class="intro-x relative ml-3 sm:ml-6">
+                    <div class="search hidden sm:block">
+                        <input type="text" class="search__input form-control dark:bg-dark-1 border-transparent placeholder-theme-8" placeholder="جستجو...">
+                        <i data-feather="search" class="search__icon dark:text-gray-300"></i> 
+                    </div>
+                    <a class="notification sm:hidden" href=""> <i data-feather="search" class="notification__icon dark:text-gray-300"></i> </a>
+                    <div class="search-result">
+                        <div class="search-result__content">
+                            <div class="search-result__content__title">صفحات</div>
+                            <div class="mb-5">
+                                <a href="" class="flex items-center">
+                                    <div class="w-8 h-8 bg-theme-29 text-theme-10 flex items-center justify-center rounded-full"> <i class="w-4 h-4" data-feather="inbox"></i> </div>
+                                    <div class="mr-3">تنظیمات ایمیل</div>
+                                </a>
+                                <a href="" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 bg-theme-30 text-theme-24 flex items-center justify-center rounded-full"> <i class="w-4 h-4" data-feather="users"></i> </div>
+                                    <div class="mr-3">کاربران و دسترسی ها</div>
+                                </a>
+                                <a href="" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 bg-theme-31 text-theme-26 flex items-center justify-center rounded-full"> <i class="w-4 h-4" data-feather="credit-card"></i> </div>
+                                    <div class="mr-3">گزارش تراکنش ها</div>
+                                </a>
+                            </div>
+                            <div class="search-result__content__title">کاربران</div>
+                            <div class="mb-5">
+                                <a href="" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 image-fit">
+                                        <img alt="Icewall Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-5.jpg">
+                                    </div>
+                                    <div class="mr-3">جانی دپ</div>
+                                    <div class="mr-auto w-n48 truncate text-gray-600 text-xs text-left">johnnydepp@left4code.com</div>
+                                </a>
+                                <a href="" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 image-fit">
+                                        <img alt="Icewall Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-7.jpg">
+                                    </div>
+                                    <div class="mr-3">انجلینا جولی</div>
+                                    <div class="mr-auto w-n48 truncate text-gray-600 text-xs text-left">angelinajolie@left4code.com</div>
+                                </a>
+                                <a href="" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 image-fit">
+                                        <img alt="Icewall Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-1.jpg">
+                                    </div>
+                                    <div class="mr-3">دنزل واشینگتون</div>
+                                    <div class="mr-auto w-n48 truncate text-gray-600 text-xs text-left">denzelwashington@left4code.com</div>
+                                </a>
+                                <a href="" class="flex items-center mt-2">
+                                    <div class="w-8 h-8 image-fit">
+                                        <img alt="Icewall Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-14.jpg">
+                                    </div>
+                                    <div class="mr-3">برد پیت</div>
+                                    <div class="mr-auto w-n48 truncate text-gray-600 text-xs text-left">bradpitt@left4code.com</div>
+                                </a>
+                            </div>
+                            <div class="search-result__content__title">محصولات</div>
+                            <a href="" class="flex items-center mt-2">
+                                <div class="w-8 h-8 image-fit">
+                                    <img alt="Icewall Tailwind HTML Admin Template" class="rounded-full" src="dist/images/preview-11.jpg">
+                                </div>
+                                <div class="mr-3"> سامسونگ گلکسی اس20 اولترا</div>
+                                <div class="mr-auto w-n48 truncate text-gray-600 text-xs text-left">گوشی هوشمند</div>
+                            </a>
+                            <a href="" class="flex items-center mt-2">
+                                <div class="w-8 h-8 image-fit">
+                                    <img alt="Icewall Tailwind HTML Admin Template" class="rounded-full" src="dist/images/preview-7.jpg">
+                                </div>
+                                <div class="mr-3">اوپو فایند ایکس پرو </div>
+                                <div class="mr-auto w-n48 truncate text-gray-600 text-xs text-left">گوشی هوشمند</div>
+                            </a>
+                            <a href="" class="flex items-center mt-2">
+                                <div class="w-8 h-8 image-fit">
+                                    <img alt="Icewall Tailwind HTML Admin Template" class="rounded-full" src="dist/images/preview-13.jpg">
+                                </div>
+                                <div class="mr-3">تلویزیون سامسونگ کیو ناینتین ال ای دی</div>
+                                <div class="mr-auto w-n48 truncate text-gray-600 text-xs text-left">الکترونیک</div>
+                            </a>
+                            <a href="" class="flex items-center mt-2">
+                                <div class="w-8 h-8 image-fit">
+                                    <img alt="Icewall Tailwind HTML Admin Template" class="rounded-full" src="dist/images/preview-11.jpg">
+                                </div>
+                                <div class="mr-3">نیک ایر مکس 270</div>
+                                <div class="mr-auto w-n48 truncate text-gray-600 text-xs text-left">ورزش و سلامتی</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Search -->
+                <!-- BEGIN: Notifications -->
+                <div class="intro-x dropdown ml-4 sm:ml-6">
+                    <div class="dropdown-toggle notification notification--bullet cursor-pointer" role="button" aria-expanded="false"> <i data-feather="bell" class="notification__icon dark:text-gray-300"></i> </div>
+                    <div class="notification-content pt-2 dropdown-menu">
+                        <div class="notification-content__box dropdown-menu__content box dark:bg-dark-6">
+                             <div class="notification-content__title"> اطلاعیه ها </div>
+                            <div class="cursor-pointer relative flex items-center ">
+                                <div class="w-12 h-12 flex-none image-fit ml-1">
+                                    <img alt="Icewall Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-5.jpg">
+                                    <div class="w-3 h-3 bg-theme-10 absolute left-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="mr-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate ml-5">جانی دپ</a> 
+                                        <div class="text-xs text-gray-500 mr-auto whitespace-nowrap">01:10 عصر</div>
+                                    </div>
+                                    <div class="w-full truncate text-gray-600 mt-0.5">لورم ایپسوم در این صورت می توان امید داشت که تمام و
+                                        دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز
+                                        شامل حروفچینی دستاوردهای ا </div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit ml-1">
+                                    <img alt="Icewall Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-7.jpg">
+                                    <div class="w-3 h-3 bg-theme-10 absolute left-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="mr-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate ml-5">انجلینا جولی</a> 
+                                        <div class="text-xs text-gray-500 mr-auto whitespace-nowrap">05:09 صبح</div>
+                                    </div>
+                                    <div class="w-full truncate text-gray-600 mt-0.5"> در این صورت می توان امید داشت که تمام و
+                                        دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز
+                                        شامل حروفچینی دستاوردهای  </div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit ml-1">
+                                    <img alt="Icewall Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-1.jpg">
+                                    <div class="w-3 h-3 bg-theme-10 absolute left-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="mr-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate ml-5">دنزل واشینگتون</a> 
+                                        <div class="text-xs text-gray-500 mr-auto whitespace-nowrap">05:09 صبح</div>
+                                    </div>
+                                    <div class="w-full truncate text-gray-600 mt-0.5"> در این صورت می توان امید داشت که تمام و
+                                        دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز
+                                        شامل حروفچینی دستاوردهای ا </div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit ml-1">
+                                    <img alt="Icewall Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-14.jpg">
+                                    <div class="w-3 h-3 bg-theme-10 absolute left-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="mr-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate ml-5">برد پیت</a> 
+                                        <div class="text-xs text-gray-500 mr-auto whitespace-nowrap">05:09 صبح</div>
+                                    </div>
+                                    <div class="w-full truncate text-gray-600 mt-0.5">چاپگرها و متون بلکه روزنامه و مجله در
+                                        ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+                                        متنوع با هدف بهبود ابزارهای کاربردی می باشد..</div>
+                                </div>
+                            </div>
+                            <div class="cursor-pointer relative flex items-center mt-5">
+                                <div class="w-12 h-12 flex-none image-fit ml-1">
+                                    <img alt="Icewall Tailwind HTML Admin Template" class="rounded-full" src="dist/images/profile-14.jpg">
+                                    <div class="w-3 h-3 bg-theme-10 absolute left-0 bottom-0 rounded-full border-2 border-white"></div>
+                                </div>
+                                <div class="mr-2 overflow-hidden">
+                                    <div class="flex items-center">
+                                        <a href="javascript:;" class="font-medium truncate ml-5">راسل کرو</a> 
+                                        <div class="text-xs text-gray-500 mr-auto whitespace-nowrap">01:10 عصر</div>
+                                    </div>
+                                    <div class="w-full truncate text-gray-600 mt-0.5">چاپگرها و متون بلکه روزنامه و مجله در
+                                        ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
+                                        متنوع با هدف بهبود ابزارهای کاربردی می باشد..</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Notifications -->
+                <!-- BEGIN: Account Menu -->
+                <div class="intro-x dropdown w-8 h-8">
+                    <div class="dropdown-toggle w-8 h-8 rounded-full overflow-hidden shadow-lg image-fit zoom-in scale-110" role="button" aria-expanded="false">
+                        <img alt="Icewall Tailwind HTML Admin Template" src="dist/images/profile-11.jpg">
+                    </div>
+                    <div class="dropdown-menu w-56">
+                        <div class="dropdown-menu__content box bg-theme-11 dark:bg-dark-6 text-white">
+                            <div class="p-4 border-b border-theme-12 dark:border-dark-3">
+                                <div class="font-medium">جانی دپ</div>
+                                <div class="text-xs text-theme-13 mt-0.5 dark:text-gray-600">مهندس بک اند</div>
+                            </div>
+                            <div class="p-2">
+                                <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md"> <i data-feather="user" class="w-4 h-4 ml-2"></i> پروفایل </a>
+                                <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md"> <i data-feather="edit" class="w-4 h-4 ml-2"></i> افزودن اکانت </a>
+                                <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md"> <i data-feather="lock" class="w-4 h-4 ml-2"></i>بازیابی رمزعبور</a>
+                                <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md"> <i data-feather="help-circle" class="w-4 h-4 ml-2"></i>راهنمایی</a>
+                            </div>
+                            <div class="p-2 border-t border-theme-12 dark:border-dark-3">
+                                <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out hover:bg-theme-1 dark:hover:bg-dark-3 rounded-md"> <i data-feather="toggle-right" class="w-4 h-4 ml-2"></i>خروج</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END: Account Menu -->
+            </div>
+        </div>
+        <!-- END: Top Bar -->
+        <div class="wrapper">
+            <div class="wrapper-box">
+                <!-- BEGIN: Side Menu -->
+                <nav class="side-nav side-nav--simple">
+                    <ul>
+                        <li>
+                            <a href="javascript:;" class="side-menu">
+                                <div class="side-menu__icon"> <i data-feather="home"></i> </div>
+                                <div class="side-menu__title">
+                                    داشبرد 
+                                    <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
+                                </div>
+                            </a>
+                            <ul class="">
+                                <li>
+                                    <a href="simple-menu-dark-dashboard-overview-1.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> نمای کل  1 </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-dashboard-overview-2.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> نمای کل  2 </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-dashboard-overview-3.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> نمای کل  3 </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="side-menu">
+                                <div class="side-menu__icon"> <i data-feather="box"></i> </div>
+                                <div class="side-menu__title">
+                                   چینش منو  
+                                    <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
+                                </div>
+                            </a>
+                            <ul class="">
+                                <li>
+                                    <a href="side-menu-dark-dashboard-overview-1.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> منو کنار </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-dashboard-overview-1.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> منو ساده </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="top-menu-dark-dashboard-overview-1.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> منو بالا </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="simple-menu-dark-inbox.html" class="side-menu">
+                                <div class="side-menu__icon"> <i data-feather="inbox"></i> </div>
+                                <div class="side-menu__title"> صندوق ورودی </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="simple-menu-dark-file-manager.html" class="side-menu">
+                                <div class="side-menu__icon"> <i data-feather="hard-drive"></i> </div>
+                                <div class="side-menu__title"> مدیریت فایل </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="simple-menu-dark-point-of-sale.html" class="side-menu">
+                                <div class="side-menu__icon"> <i data-feather="credit-card"></i> </div>
+                                <div class="side-menu__title"> نمای فروش </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="simple-menu-dark-chat.html" class="side-menu">
+                                <div class="side-menu__icon"> <i data-feather="message-square"></i> </div>
+                                <div class="side-menu__title"> چت </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="simple-menu-dark-post.html" class="side-menu">
+                                <div class="side-menu__icon"> <i data-feather="file-text"></i> </div>
+                                <div class="side-menu__title"> پست </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="simple-menu-dark-calendar.html" class="side-menu side-menu--active">
+                                <div class="side-menu__icon"> <i data-feather="calendar"></i> </div>
+                                <div class="side-menu__title"> تقویم </div>
+                            </a>
+                        </li>
+                        <li class="side-nav__devider my-6"></li>
+                        <li>
+                            <a href="javascript:;" class="side-menu">
+                                <div class="side-menu__icon"> <i data-feather="edit"></i> </div>
+                                <div class="side-menu__title">
+                                    کراد 
+                                    <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
+                                </div>
+                            </a>
+                            <ul class="">
+                                <li>
+                                    <a href="side-menu-dark-crud-data-list.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title">  لیست داده </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="side-menu-dark-crud-form.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title">  فرم </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="side-menu">
+                                <div class="side-menu__icon"> <i data-feather="users"></i> </div>
+                                <div class="side-menu__title">
+                                    کاربران 
+                                    <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
+                                </div>
+                            </a>
+                            <ul class="">
+                                <li>
+                                    <a href="simple-menu-dark-users-layout-1.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> چینش 1 </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-users-layout-2.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> چینش 2 </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-users-layout-3.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> چینش 3 </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="side-menu">
+                                <div class="side-menu__icon"> <i data-feather="trello"></i> </div>
+                                <div class="side-menu__title">
+                                    پروفایل 
+                                    <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
+                                </div>
+                            </a>
+                            <ul class="">
+                                <li>
+                                    <a href="simple-menu-dark-profile-overview-1.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> نمای کل  1 </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-profile-overview-2.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> نمای کل  2 </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-profile-overview-3.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> نمای کل  3 </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="side-menu">
+                                <div class="side-menu__icon"> <i data-feather="layout"></i> </div>
+                                <div class="side-menu__title">
+                                    صفحات 
+                                    <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
+                                </div>
+                            </a>
+                            <ul class="">
+                                <li>
+                                    <a href="javascript:;" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title">
+                                            ویزارد
+                                            <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
+                                        </div>
+                                    </a>
+                                    <ul class="">
+                                        <li>
+                                            <a href="simple-menu-dark-wizard-layout-1.html" class="side-menu">
+                                                <div class="side-menu__icon"> <i data-feather="zap"></i> </div>
+                                                <div class="side-menu__title">چینش 1</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="simple-menu-dark-wizard-layout-2.html" class="side-menu">
+                                                <div class="side-menu__icon"> <i data-feather="zap"></i> </div>
+                                                <div class="side-menu__title">چینش 2</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="simple-menu-dark-wizard-layout-3.html" class="side-menu">
+                                                <div class="side-menu__icon"> <i data-feather="zap"></i> </div>
+                                                <div class="side-menu__title">چینش 3</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title">
+                                            بلاگ 
+                                            <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
+                                        </div>
+                                    </a>
+                                    <ul class="">
+                                        <li>
+                                            <a href="simple-menu-dark-blog-layout-1.html" class="side-menu">
+                                                <div class="side-menu__icon"> <i data-feather="zap"></i> </div>
+                                                <div class="side-menu__title">چینش 1</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="simple-menu-dark-blog-layout-2.html" class="side-menu">
+                                                <div class="side-menu__icon"> <i data-feather="zap"></i> </div>
+                                                <div class="side-menu__title">چینش 2</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="simple-menu-dark-blog-layout-3.html" class="side-menu">
+                                                <div class="side-menu__icon"> <i data-feather="zap"></i> </div>
+                                                <div class="side-menu__title">چینش 3</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title">
+                                            قیمت‌گذاری 
+                                            <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
+                                        </div>
+                                    </a>
+                                    <ul class="">
+                                        <li>
+                                            <a href="simple-menu-dark-pricing-layout-1.html" class="side-menu">
+                                                <div class="side-menu__icon"> <i data-feather="zap"></i> </div>
+                                                <div class="side-menu__title">چینش 1</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="simple-menu-dark-pricing-layout-2.html" class="side-menu">
+                                                <div class="side-menu__icon"> <i data-feather="zap"></i> </div>
+                                                <div class="side-menu__title">چینش 2</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title">
+                                            فاکتور 
+                                            <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
+                                        </div>
+                                    </a>
+                                    <ul class="">
+                                        <li>
+                                            <a href="simple-menu-dark-invoice-layout-1.html" class="side-menu">
+                                                <div class="side-menu__icon"> <i data-feather="zap"></i> </div>
+                                                <div class="side-menu__title">چینش 1</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="simple-menu-dark-invoice-layout-2.html" class="side-menu">
+                                                <div class="side-menu__icon"> <i data-feather="zap"></i> </div>
+                                                <div class="side-menu__title">چینش 2</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title">
+                                            پرسش و پاسخ 
+                                            <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
+                                        </div>
+                                    </a>
+                                    <ul class="">
+                                        <li>
+                                            <a href="simple-menu-dark-faq-layout-1.html" class="side-menu">
+                                                <div class="side-menu__icon"> <i data-feather="zap"></i> </div>
+                                                <div class="side-menu__title">چینش 1</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="simple-menu-dark-faq-layout-2.html" class="side-menu">
+                                                <div class="side-menu__icon"> <i data-feather="zap"></i> </div>
+                                                <div class="side-menu__title">چینش 2</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="simple-menu-dark-faq-layout-3.html" class="side-menu">
+                                                <div class="side-menu__icon"> <i data-feather="zap"></i> </div>
+                                                <div class="side-menu__title">چینش 3</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="login-dark-login.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> ورود </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login-dark-register.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> ثبت نام </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="main-dark-error-page.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> صفحه خطا </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-update-profile.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> بروزرسانی پروفایل </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-change-password.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> تغییر رمزعبور </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="side-nav__devider my-6"></li>
+                        <li>
+                            <a href="javascript:;" class="side-menu">
+                                <div class="side-menu__icon"> <i data-feather="inbox"></i> </div>
+                                <div class="side-menu__title">
+                                    کامپوننت ها 
+                                    <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
+                                </div>
+                            </a>
+                            <ul class="">
+                                <li>
+                                    <a href="javascript:;" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title">
+                                            جدول
+                                            <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
+                                        </div>
+                                    </a>
+                                    <ul class="">
+                                        <li>
+                                            <a href="simple-menu-dark-regular-table.html" class="side-menu">
+                                                <div class="side-menu__icon"> <i data-feather="zap"></i> </div>
+                                                <div class="side-menu__title"> جدول ساده </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="simple-menu-dark-tabulator.html" class="side-menu">
+                                                <div class="side-menu__icon"> <i data-feather="zap"></i> </div>
+                                                <div class="side-menu__title"> تیبللاتور </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title">
+                                            همپوشانی
+                                            <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
+                                        </div>
+                                    </a>
+                                    <ul class="">
+                                        <li>
+                                            <a href="simple-menu-dark-modal.html" class="side-menu">
+                                                <div class="side-menu__icon"> <i data-feather="zap"></i> </div>
+                                                <div class="side-menu__title"> مودال </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="simple-menu-dark-slide-over.html" class="side-menu">
+                                                <div class="side-menu__icon"> <i data-feather="zap"></i> </div>
+                                                <div class="side-menu__title"> اسلاید اور </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="simple-menu-dark-notification.html" class="side-menu">
+                                                <div class="side-menu__icon"> <i data-feather="zap"></i> </div>
+                                                <div class="side-menu__title"> اطلاعیه‌ها </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-accordion.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> آکاردیون </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-button.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> دکمه </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-alert.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> هشدار </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-progress-bar.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> نوار پیشرفت </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-tooltip.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> تولتیپ </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-dropdown.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> دراپ‌دوان </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-typography.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> تایپوگرافی </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-icon.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> ایکن </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="side-menu-dark-loading-icon.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> ایکن لودینگ </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="side-menu">
+                                <div class="side-menu__icon"> <i data-feather="sidebar"></i> </div>
+                                <div class="side-menu__title">
+                                    فرم ها
+                                    <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
+                                </div>
+                            </a>
+                            <ul class="">
+                                <li>
+                                    <a href="simple-menu-dark-regular-form.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> فرم ساده </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-datepicker.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> انتخابگر زمان </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-tail-select.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> انتخابگر تیل </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-file-upload.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title">آپلود فایل </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-wysiwyg-editor.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> ادیتور ویسیویگ </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-validation.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> اعتبارسنجی </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="side-menu">
+                                <div class="side-menu__icon"> <i data-feather="hard-drive"></i> </div>
+                                <div class="side-menu__title">
+                                    ویجت ها
+                                    <div class="side-menu__sub-icon"> <i data-feather="chevron-down"></i> </div>
+                                </div>
+                            </a>
+                            <ul class="">
+                                <li>
+                                    <a href="simple-menu-dark-chart.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> نمودار </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-slider.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> اسلایدر </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="simple-menu-dark-image-zoom.html" class="side-menu">
+                                        <div class="side-menu__icon"> <i data-feather="activity"></i> </div>
+                                        <div class="side-menu__title"> بزرگنمایی تصویر </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- END: Side Menu -->
+                <!-- BEGIN: Content -->
+                <div class="content">
+                    <div class="intro-y flex flex-col sm:flex-row items-center mt-8">
+                        <h2 class="text-lg font-medium ml-auto">
+                            تقویم
+                        </h2>
+                        <div class="w-full sm:w-auto flex mt-4 sm:mt-0">
+                            <button class="btn btn-primary shadow-md ml-2">پرینت برنامه</button>
+                            <div class="dropdown mr-auto sm:ml-0">
+                                <button class="dropdown-toggle btn px-2 box text-gray-700 dark:text-gray-300" aria-expanded="false">
+                                    <span class="w-5 h-5 flex items-center justify-center"> <i class="w-4 h-4" data-feather="plus"></i> </span>
+                                </button>
+                                <div class="dropdown-menu w-40">
+                                    <div class="dropdown-menu__content box dark:bg-dark-1 p-2">
+                                        <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"> <i data-feather="share-2" class="w-4 h-4 ml-2"></i> اشتراک </a>
+                                        <a href="" class="flex items-center block p-2 transition duration-300 ease-in-out bg-white dark:bg-dark-1 hover:bg-gray-200 dark:hover:bg-dark-2 rounded-md"> <i data-feather="settings" class="w-4 h-4 ml-2"></i> تنظیمات </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12 gap-5 mt-5">
+                        <!-- BEGIN: Calendar Side Menu -->
+                        <div class="col-span-12 xl:col-span-4 xxl:col-span-3">
+                            <div class="box p-5 intro-y">
+                                <button type="button" class="btn btn-primary w-full mt-2"> <i class="w-4 h-4 ml-2" data-feather="edit-3"></i>افزودن برنامه</button>
+                                <div class="border-t border-b border-gray-200 dark:border-dark-5 mt-6 mb-5 py-3" id="calendar-events">
+                                    <div class="relative">
+                                        <div class="event p-3 -mx-3 cursor-pointer transition duration-300 ease-in-out hover:bg-gray-200 dark:hover:bg-dark-1 rounded-md flex items-center">
+                                            <div class="w-2 h-2 bg-theme-22 rounded-full ml-3"></div>
+                                            <div class="pl-10">
+                                                <div class="event__title truncate"> ویوجی‌اس امستردام</div>
+                                                <div class="text-gray-600 text-xs mt-0.5"> <span class="event__days">2</span> روز <span class="mx-1">•</span> 10:00 عصر </div>
+                                            </div>
+                                        </div>
+                                        <a class="flex items-center absolute top-0 bottom-0 my-auto left-0" href=""> <i data-feather="edit" class="w-4 h-4 text-gray-600"></i> </a>
+                                    </div>
+                                    <div class="relative">
+                                        <div class="event p-3 -mx-3 cursor-pointer transition duration-300 ease-in-out hover:bg-gray-200 dark:hover:bg-dark-1 rounded-md flex items-center">
+                                            <div class="w-2 h-2 bg-theme-23 rounded-full ml-3"></div>
+                                            <div class="pl-10">
+                                                <div class="event__title truncate"> ویوفس ژاپن </div>
+                                                <div class="text-gray-600 text-xs mt-0.5"> <span class="event__days">3</span> روز <span class="mx-1">•</span> 07:00 عصر </div>
+                                            </div>
+                                        </div>
+                                        <a class="flex items-center absolute top-0 bottom-0 my-auto left-0" href=""> <i data-feather="edit" class="w-4 h-4 text-gray-600"></i> </a>
+                                    </div>
+                                    <div class="relative">
+                                        <div class="event p-3 -mx-3 cursor-pointer transition duration-300 ease-in-out hover:bg-gray-200 dark:hover:bg-dark-1 rounded-md flex items-center">
+                                            <div class="w-2 h-2 bg-theme-22 rounded-full ml-3"></div>
+                                            <div class="pl-10">
+                                                <div class="event__title truncate"> لاراکان 1400</div>
+                                                <div class="text-gray-600 text-xs mt-0.5"> <span class="event__days">4</span> روز <span class="mx-1">•</span> 11:00 عصر </div>
+                                            </div>
+                                        </div>
+                                        <a class="flex items-center absolute top-0 bottom-0 my-auto left-0" href=""> <i data-feather="edit" class="w-4 h-4 text-gray-600"></i> </a>
+                                    </div>
+                                    <div class="text-gray-600 p-3 text-center hidden" id="calendar-no-events"> بدون رویداد </div>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label" for="checkbox-events"> حذف بعد از انداختن </label>
+                                    <input class="show-code form-check-switch mr-auto" type="checkbox" id="checkbox-events">
+                                </div>
+                            </div>
+                            <div class="box p-5 intro-y mt-5">
+                                <div class="flex">
+                                    <i data-feather="chevron-right" class="w-5 h-5 text-gray-600"></i> 
+                                    <div class="font-medium text-base mx-auto">مهر</div>
+                                    <i data-feather="chevron-left" class="w-5 h-5 text-gray-600"></i> 
+                                </div>
+                                <div class="grid grid-cols-7 gap-4 mt-5 text-center cal">
+                                    <div class="font-medium">شنبه</div>
+                                    <div class="font-medium">یکشنبه</div>
+                                    <div class="font-medium">دوشنبه</div>
+                                    <div class="font-medium">سه‌شنبه</div>
+                                    <div class="font-medium">چهار‌شنبه</div>
+                                    <div class="font-medium">پنجشنبه</div>
+                                    <div class="font-medium">جمعه</div>
+                                    <div class="py-0.5 rounded relative text-gray-600">29</div>
+                                    <div class="py-0.5 rounded relative text-gray-600">30</div>
+                                    <div class="py-0.5 rounded relative text-gray-600">31</div>
+                                    <div class="py-0.5 rounded relative">1</div>
+                                    <div class="py-0.5 rounded relative">2</div>
+                                    <div class="py-0.5 rounded relative">3</div>
+                                    <div class="py-0.5 rounded relative">4</div>
+                                    <div class="py-0.5 rounded relative">5</div>
+                                    <div class="py-0.5 bg-theme-29 dark:bg-theme-10 rounded relative">6</div>
+                                    <div class="py-0.5 rounded relative">7</div>
+                                    <div class="py-0.5 bg-theme-26 dark:bg-theme-17 text-white rounded relative">8</div>
+                                    <div class="py-0.5 rounded relative">9</div>
+                                    <div class="py-0.5 rounded relative">10</div>
+                                    <div class="py-0.5 rounded relative">11</div>
+                                    <div class="py-0.5 rounded relative">12</div>
+                                    <div class="py-0.5 rounded relative">13</div>
+                                    <div class="py-0.5 rounded relative">14</div>
+                                    <div class="py-0.5 rounded relative">15</div>
+                                    <div class="py-0.5 rounded relative">16</div>
+                                    <div class="py-0.5 rounded relative">17</div>
+                                    <div class="py-0.5 rounded relative">18</div>
+                                    <div class="py-0.5 rounded relative">19</div>
+                                    <div class="py-0.5 rounded relative">20</div>
+                                    <div class="py-0.5 rounded relative">21</div>
+                                    <div class="py-0.5 rounded relative">22</div>
+                                    <div class="py-0.5 bg-theme-30 dark:bg-theme-22 rounded relative">23</div>
+                                    <div class="py-0.5 rounded relative">24</div>
+                                    <div class="py-0.5 rounded relative">25</div>
+                                    <div class="py-0.5 rounded relative">26</div>
+                                    <div class="py-0.5 bg-theme-31 dark:bg-theme-23 rounded relative">27</div>
+                                    <div class="py-0.5 rounded relative">28</div>
+                                    <div class="py-0.5 rounded relative">29</div>
+                                    <div class="py-0.5 rounded relative">30</div>
+                                    <div class="py-0.5 rounded relative text-gray-600">1</div>
+                                    <div class="py-0.5 rounded relative text-gray-600">2</div>
+                                    <div class="py-0.5 rounded relative text-gray-600">3</div>
+                                    <div class="py-0.5 rounded relative text-gray-600">4</div>
+                                    <div class="py-0.5 rounded relative text-gray-600">5</div>
+                                    <div class="py-0.5 rounded relative text-gray-600">6</div>
+                                    <div class="py-0.5 rounded relative text-gray-600">7</div>
+                                    <div class="py-0.5 rounded relative text-gray-600">8</div>
+                                    <div class="py-0.5 rounded relative text-gray-600">9</div>
+                                </div>
+                                <div class="border-t border-gray-200 dark:border-dark-5 pt-5 mt-5">
+                                    <div class="flex items-center">
+                                        <div class="w-2 h-2 bg-theme-22 rounded-full ml-3"></div>
+                                        <span class="truncate">UI/UX ورکشاپ</span> 
+                                        <div class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+                                        <span class="font-medium xl:ml-auto">23ام</span> 
+                                    </div>
+                                    <div class="flex items-center mt-4">
+                                        <div class="w-2 h-2 bg-theme-26 dark:bg-theme-10 rounded-full ml-3"></div>
+                                        <span class="truncate">VueJs توسعه فرانت با</span> 
+                                        <div class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+                                        <span class="font-medium xl:ml-auto">10ام</span> 
+                                    </div>
+                                    <div class="flex items-center mt-4">
+                                        <div class="w-2 h-2 bg-theme-23 rounded-full ml-3"></div>
+                                        <span class="truncate">Laravel ای پی ا رست</span>
+                                        <div class="h-px flex-1 border border-r border-dashed border-gray-300 mx-3 xl:hidden"></div>
+                                        <span class="font-medium xl:ml-auto">31ام</span> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END: Calendar Side Menu -->
+                        <!-- BEGIN: Calendar Content -->
+                        <div class="col-span-12 xl:col-span-8 xxl:col-span-9">
+                            <div class="box p-5">
+                                <div class="full-calendar" id="calendar"></div>
+                            </div>
+                        </div>
+                        <!-- END: Calendar Content -->
+                    </div>
+                </div>
+                <!-- END: Content -->
+            </div>
+        </div>
+        <!-- BEGIN: Dark Mode Switcher-->
+        <div data-url="simple-menu-light-calendar.html" class="dark-mode-switcher cursor-pointer shadow-md fixed bottom-0 left-0 box dark:bg-dark-2 border rounded-full w-40 h-12 flex items-center justify-center z-50 mb-10 ml-10">
+            <div class="ml-4 text-gray-700 dark:text-gray-300">حالت تیره</div>
+            <div class="dark-mode-switcher__toggle dark-mode-switcher__toggle--active border"></div>
+        </div>
+        <!-- END: Dark Mode Switcher-->
+        <!-- BEGIN: JS Assets-->
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=["your-google-map-api"]&libraries=places"></script>
+        <script src="dist/js/app.js"></script>
+        <!-- END: JS Assets-->
+    </body>
+</html>

@@ -1,0 +1,6 @@
+/next/.next
+/next/node_modules
+/laravel/Core/vendor
+/laravel/Core/.env
+/laravel/Core/storage
+/.vscode
