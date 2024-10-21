@@ -1,6 +1,4 @@
-Here’s the PHP validation configuration file with the Persian parts translated to Arabic, while keeping the original code intact:
-
-```php
+<?php
 return [
     /*
     |--------------------------------------------------------------------------
@@ -188,6 +186,3 @@ return [
         // Add more translations as needed
     ],
 ];
-``` 
-
-Let me know if you need any further changes!

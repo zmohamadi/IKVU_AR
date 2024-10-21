@@ -15,8 +15,8 @@ class StatusRequest extends FormRequest
     public function rules()
     {
         return [
-                'title_fa'=>'required',
-                // 'title_en'=>'required',
+            'title_'.\Config::get("app.locale")=>'required',
+            // 'title_en'=>'required',
                 // 'title_ar'=>'required',
                 'group_id'=>'required',
                 'code'=>'required',

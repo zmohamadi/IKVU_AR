@@ -6,7 +6,7 @@ import { useData, useFormRefs, Input, Button, ButtonContainer,Box, CheckBox, Fra
 import { useRouter } from 'next/navigation';
 
 export default function Form({id}){
-    const {Lang} = useLang();
+    const {Lang,local} = useLang();
     const {laraAdmin } = useConfig();
     const formUrl = "/categories" ; 
     let component = useFormRefs();
@@ -27,7 +27,7 @@ export default function Form({id}){
     return <>
         <Frame>
         <Box title={Lang(["public.lesson_group"])}>
-                <Input required="true" label="title_fa" refItem={[component, "title_fa"]} />
+                <Input required="true" label="title_fa" refItem={[component, "title_"+local]} />
                 <CheckBox className="col-span-6" label="status" name={Lang('public.active')} refItem={[component, "status_id"]} />
 
 

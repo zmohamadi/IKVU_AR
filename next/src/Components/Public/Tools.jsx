@@ -9,7 +9,7 @@ import { useConfig } from "@/lib/config";
 
 export function Tools({ courseId , path}) {
     const { laraAdmin, mediaPath, nextAdmin } = useConfig();
-    const { Lang } = useLang();
+    const { Lang ,local} = useLang();
     const router = useRouter();
     const component = useFormRefs();
     const { get } = useData();
@@ -55,7 +55,7 @@ export function Tools({ courseId , path}) {
                             </div>
                         </Link>
                         <Link href={hrefTools} className="block font-medium mt-4 text-center truncate">
-                            {tool.title_fa}
+                            {tool['title_'+local]}
                         </Link>
                         {hasAccess && (
                             <CheckBox

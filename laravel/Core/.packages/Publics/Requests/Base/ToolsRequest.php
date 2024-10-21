@@ -15,7 +15,7 @@ class ToolsRequest extends FormRequest
     public function rules()
     {
         return [
-                'title_fa'=>'required',
+                'title_'.\Config::get("app.locale")=>'required',
                 'href'=>'required',
                 'order'=>'required',
                 'img'=>'required',
