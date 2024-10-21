@@ -341,9 +341,12 @@ CREATE TABLE `base_year_semesters` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8 COLLATE=utf8_persian_ci;
 
 /*Data for the table `base_year_semesters` */
+
+insert  into `base_year_semesters`(`id`,`year`,`semester`,`start_date`,`end_date`,`creator_id`,`editor_id`,`course_count`,`status_id`,`current`,`deleted_at`,`created_at`,`updated_at`) values 
+(6,'1403','1','1403/07/01','1403/10/30',1,NULL,NULL,1,1,NULL,'2024-07-06 20:22:35','2024-09-15 14:48:58');
 
 /*Table structure for table `cache` */
 
