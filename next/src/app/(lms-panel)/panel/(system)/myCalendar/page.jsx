@@ -17,7 +17,8 @@ export default function Page() {
     }, [])
 
     
-    const now = new Date();
+    // const now = new Date();
+    const now = new Date(+new Date() + 86400000);
 
     const getEvents = (startDate = null) => {
         let url = startDate == null ? laraDomain + laraAdmin + '/get-all-events'  : laraDomain + laraAdmin + '/get-all-events?startDate=' + startDate
