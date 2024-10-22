@@ -3,6 +3,7 @@
 import {useEffect, useState} from 'react';
 import {Tools} from '../Utils/Tools';
 import {useFormElement} from './Element';
+import { useLang } from '@/lib';
 // import tail from 'tail.select.js';
 
 const Select = (props)=>{      
@@ -20,6 +21,7 @@ const Select = (props)=>{
     });
 
     useEffect(()=> setState({value: defaultValue}), [defaultValue]);
+    const {Lang} = useLang();
 
     return(
         <div className={className?className:' mb-3 col-span-12 md:col-span-6'} >
@@ -34,7 +36,7 @@ const Select = (props)=>{
                 defaultValue={state?.value}
                 style= {{fontHeight: "1.65rem"}}
             >
-                <option value="" >انتخاب گزینه</option>
+                <option value="" >{Lang('public.select_option')}</option>
                 { children }
                 {
                     Tools.getArray(data).map((item, key)=><option key={key} value={item[valueKey]}>{item[titleKey]}</option>)

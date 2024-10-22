@@ -332,6 +332,9 @@ $lang = [
     'view_score_answers'=>'عرض الدرجة ورسائل المعلم',
     'not_access_view_reply'=>'ليس لديك صلاحية لعرض تفاصيل الردود!',
     'text_not_last_reply'=>'لم يتم تقديم رد جديد من قبل الطالب!',
+    'assignment_score'=>'درجة المهمة',
+    'attemp'=>'رد الطالب',
+    'text_select_student'=>'يجب عليك اختيار دورة ومجموعة معينة لتتمكن من اختيار الطالب !!!',
 ];
 
 $menus = include(__DIR__.'/./menus.php');

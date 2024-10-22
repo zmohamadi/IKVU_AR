@@ -156,6 +156,7 @@ return [
     'delete_error'=>'Record not found, probably already deleted',
     'file_delete_error' => 'File not found, probably already deleted',
     'confirm_delete'=>'Are you sure you want to delete?',
+    'select_option'=>'Select Option'
     
 ];
 ?>
