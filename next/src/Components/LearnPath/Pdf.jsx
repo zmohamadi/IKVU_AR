@@ -44,15 +44,20 @@ export default function Pdf({ fileUrl, file, parent }) {
 
     useEffect(() => {
         getData();
-        
+
         const handleContextmenu = e => {
             e.preventDefault()
         }
+        
         document.addEventListener('contextmenu', handleContextmenu)
+        
+        
+        // swipe()
         return function cleanup() {
             document.removeEventListener('contextmenu', handleContextmenu)
         }
     }, [])
+
 
     const getData = async () => {
         await axios.post(config.host() + '/mastership/get-file', { url: fileUrl + '/pdf/', file: file }, { responseType: 'blob' }).then(response => {
@@ -77,6 +82,72 @@ export default function Pdf({ fileUrl, file, parent }) {
         setPageWidth(window.innerWidth);
         setLoading(false);
     }
+
+    useEffect(() => {
+        document.addEventListener('touchstart', handleTouchStart, false);
+        document.addEventListener('touchmove', handleTouchMove, false);
+        
+        // swipe()
+        return function cleanup() {
+            document.removeEventListener('touchstart', handleTouchStart)
+            document.removeEventListener('touchmove', handleTouchMove)
+        }
+    },[pageNumber, numPages])
+
+    var xDown = null;
+    var yDown = null;
+
+    function getTouches(evt) {
+        return evt.touches ||             // browser API
+            evt.originalEvent.touches; // jQuery
+    }
+
+    function handleTouchStart(evt) {
+        const firstTouch = getTouches(evt)[0];
+        xDown = firstTouch.clientX;
+        yDown = firstTouch.clientY;
+    };
+
+    function handleTouchMove(evt) {
+        if (!xDown || !yDown) {
+            return;
+        }
+
+        var xUp = evt.touches[0].clientX;
+        var yUp = evt.touches[0].clientY;
+
+        var xDiff = xDown - xUp;
+        var yDiff = yDown - yUp;
+
+        var pdfContainer = $('.pdf-reader').width();
+        var page = $('.react-pdf__Document').width();
+
+        console.log(pdfContainer, page);
+        
+
+        if (pdfContainer >= page) {
+            if (Math.abs(xDiff) > Math.abs(yDiff)) {/*most significant*/
+                if (xDiff > 0) {
+                    /* right swipe */                    
+                    if(pageNumber < numPages){
+                        console.log(5613);
+                        
+                        goToNextPage()
+                    }
+                    console.log('right swipe');
+                } else {
+                    /* left swipe */
+                    if(pageNumber > 1){
+                        goToPreviousPage()
+                    }
+                    console.log('left swipe');
+                }
+            }
+        }
+
+        /* reset values */
+        xDown = null;
+    };
 
 
     // Go to next page

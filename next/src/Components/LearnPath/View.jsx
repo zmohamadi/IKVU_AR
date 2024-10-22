@@ -106,7 +106,7 @@ export function View({ laraPath, id, course, mediaPath }) {
                                 let ext = item?.substr(item?.length - 4);
 
                                 if (ext == '.bcr') {
-                                    return <div className="intro-y box px-2 md:px-5 mt-5" style={{ background: '#1e2434' }} id={`reader-desktop-${index}`}>
+                                    return <div className="intro-y box px-2 md:px-5 mt-5 overflow-auto" style={{ background: '#1e2434' }} id={`reader-desktop-${index}`}>
                                         <div className={isMobile ? "px-0 md:px-5 py-5 flex min-h-[80vh] relative items-start justify-center pdf-reader" : "px-0 md:px-5 py-5 flex h-[100vh] relative items-start justify-center pdf-reader"}>
                                             <Pdf fileUrl={fileUrl} file={item} parent={`reader-desktop-${index}`} />
                                         </div>

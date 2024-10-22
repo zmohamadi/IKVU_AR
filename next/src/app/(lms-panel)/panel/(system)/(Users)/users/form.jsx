@@ -8,7 +8,7 @@ import { useData,useFormRefs,Input,Button,ButtonContainer,Box,CheckBox,Textarea,
 import { SelectTail } from "@/Theme/Midone/Forms/SelectTail";
 import { Dropzone } from "@/Theme/Midone/Forms/Dropzone";
 
-export default function Form({id,link="/users",roleFilter="",titleFrame=""}){
+export default function Form({id,link="/users",roleFilter="",roleTitle="",titleFrame=""}){
     const {Lang, local} = useLang();
     const {laraAdmin} = useConfig();
     const router = useRouter();
@@ -34,7 +34,7 @@ export default function Form({id,link="/users",roleFilter="",titleFrame=""}){
 
     const saveItem = ()=>save(url, component, method, link);
     const back = ()=>router.back();
-    let userPersonnel = [1,2,3].includes(roleFilter) ? false : true;
+    let userPersonnel = ["1","2","3"].includes(roleFilter) ? false : true;
     
     let roles = needles?.role;
     if(roleFilter != "") roles = needles?.role?.filter((role, i)=>role.id == roleFilter)
@@ -97,14 +97,18 @@ export default function Form({id,link="/users",roleFilter="",titleFrame=""}){
                         <Input label="name" refItem={[component, "firstname"]} required="true" />
                         <Input label="family" refItem={[component, "lastname"]} required="true" />
                         {userPersonnel?
+                            // نمایش یا انتخاب نقش کاربر در فرم کاربران و پرسنل
                             <>
                                 <SelectTail className="col-span-6 sm:col-span-12" label="role" refItem={[component, "role_id"]} data={roles} titleKey={"title_"+local} required="true" onChange={getRole} />
                                 {/* <Input label="personID" refItem={[component, "person_id"]} /> */}
                             </>
                         :
-                            <SelectTail label="role" refItem={[component, "role_id"]} data={roles} titleKey={"title_"+local} required="true"
-                                // defaultValue={roleFilter}
-                            />
+                            // نمایش یا انتخاب نقش کاربر در فرم استاد و استادیار و دانشجو
+                            <div className="col-span-6">
+                                <Input type="hidden" refItem={[component, "role_id"]} defaultValue={roleFilter}/>
+                                <div className="col-span-6 sm:col-span-12 alert alert-secondary show mb-2 mt-5">{Lang("public.role")+" : "}<strong>{Lang("public."+roleTitle)}</strong></div>
+                            </div>
+                            // <SelectTail label="role" refItem={[component, "role_id"]} data={roles} titleKey={"title_"+local} required="true" defaultValue={roleFilter} />
                         }
                         <Radio type="col" label="gender" id="gender_id" refItem={[component, `gender_id`]}
                             data={needles?.gender} titleKey={"title_"+local} required="true" key={"gender_id"+component?.state?.info?.gender_id}

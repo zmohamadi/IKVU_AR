@@ -43,7 +43,15 @@ export function Reply({ id, course, laraPath, nextPath = "" }) {
         <Frame title={Lang(["public.assignment"])}>
             <div className="col-span-12 xxl:col-span-9">
                 {(!item)?
-                    <span className="alert alert-success-soft show flex items-center mb-2 mt-5">{Lang("public.loading")+"....."}</span>
+                    <div class="intro-y grid grid-cols-12 sm:gap-6 gap-y-6 box px-5 py-8 mt-5">
+                        <div className="col-span-6 sm:col-span-3 xl:col-span-2 flex flex-col justify-end items-center">
+                            {/* <i data-feather="User" className="w-8 h-8"></i>  */}
+                            {/* <i data-loading-icon="circles" className="w-8 h-8"></i>  */}
+                            {/* <FeatherIcon name="User" className="w-8 h-8" /> */}
+                            <div className="text-center text-xs mt-2">دایره</div>
+                        </div>
+                    </div>
+                    // <span className="alert alert-success-soft show flex items-center mb-2 mt-5">{Lang("public.loading")+"....."}</span>
                 :
                     <>
                         <div className="grid grid-cols-12 gap-6">

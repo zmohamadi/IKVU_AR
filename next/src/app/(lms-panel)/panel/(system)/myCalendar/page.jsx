@@ -18,7 +18,7 @@ export default function Page() {
 
     
     // const now = new Date();
-    const now = new Date(+new Date() + 86400000);
+    const now = new Date(+new Date() - 86400000);
 
     const getEvents = (startDate = null) => {
         let url = startDate == null ? laraDomain + laraAdmin + '/get-all-events'  : laraDomain + laraAdmin + '/get-all-events?startDate=' + startDate
@@ -86,7 +86,7 @@ export default function Page() {
 
                         if (key == 'end') {
                             let endDate = new Date(y)
-                            if (endDate > now) {
+                            if (endDate >= now) {
                                 // x.style = colors[index < 5 ? index : Math.floor(Math.random() * 5)]
                                 x.status = 'not-expire';
                             }else{

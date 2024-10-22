@@ -7,7 +7,7 @@ export default function EditStudent({params,id}){
 
     return(
         <div>
-            <Form id={userId} link="/students" roleFilter="2" titleFrame="students" ></Form>
+            <Form id={userId} link="/students" roleFilter="2" roleTitle="student" titleFrame="students" ></Form>
         </div>
     );
 }
