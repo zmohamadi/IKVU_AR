@@ -15,7 +15,7 @@ class TypeRequest extends FormRequest
     public function rules()
     {
         return [
-                'title_fa'=>'required',
+                'title_'.\Config::get("app.locale")=>'required',
                 // 'title_en'=>'required',
                 // 'title_ar'=>'required',
                 'description'=>'required',

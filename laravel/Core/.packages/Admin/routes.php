@@ -9,7 +9,7 @@ Route::post('/logout',"Auth\AuthenticatedController@destroy");
 
 Route::get('/bbb/{sid}', "Edu\BBBController@join");
 Route::get('/changepass',function(){
-    dd(Morilog\Jalali\Jalalian::fromCarbon(\Carbon\Carbon::now())->format('Y/m/d H:i'));
+    // dd(Morilog\Jalali\Jalalian::fromCarbon(\Carbon\Carbon::now())->format('Y/m/d H:i'));
     $students = Models\Person\Student::get();
     foreach($students as $user){
         $user->password = bcrypt($user->mobile);
