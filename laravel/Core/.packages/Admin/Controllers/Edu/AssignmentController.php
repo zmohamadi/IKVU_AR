@@ -161,7 +161,7 @@ class AssignmentController extends BaseAbstract
         $answerDetail = ($answer)? AnswerDetail::with("option","userInfo1.gender")->where('answer_id', $answer['id'])->get() : null;
         $result = Tools::checkDateTime([
             "start_time_date" => $item["start_date"] ." 00:00",
-            "end_time_date" => $item["expire_date"] ." 00:00",
+            "end_time_date" => $item["expire_date"] ." 23:59",
         ]);
 
         return response()->json([

@@ -7,7 +7,7 @@ export default function EditAssistant({params,id}){
 
     return(
         <div>
-            <Form id={userId} link="/assistants" roleFilter="3" titleFrame="assistants"></Form>
+            <Form id={userId} link="/assistants" roleFilter="3" roleTitle="assistant" titleFrame="assistants"></Form>
         </div>
     );
 }

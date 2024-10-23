@@ -157,7 +157,7 @@ class SurveyController extends BaseAbstract
         $questions = Question::with(["questionOptions"=>function ($q){ $q->orderBy("order", "ASC"); }])->where('survey_id', $id)->orderBy("order", "ASC")->get();
         $attemp = Attemp::where('survey_id', $id)->where('user_id', $this->user_id)->first();
         $answer = ($attemp==null)? [] : Answer::where('attemp_id', $attemp->id)->pluck("question_option_id", "question_id");
-        $result = Tools::checkDateTime(["start_time_date" => $item["start_date"]." 00:00", "end_time_date" => $item["expire_date"]." 00:00"]);
+        $result = Tools::checkDateTime(["start_time_date" => $item["start_date"]." 00:00", "end_time_date" => $item["expire_date"]." 23:59"]);
         $data = [
             "item" => $item,
             "course" => $course,

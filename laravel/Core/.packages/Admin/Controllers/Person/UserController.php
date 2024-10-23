@@ -225,7 +225,7 @@ class UserController extends BaseAbstract
 
             return [
                 // 'title' => "آزمون : " . $q['title'],
-                'code' => $quiz['course']['code'],
+                'code' => $q['course']['code'],
                 'title' => "آزمون : درس " . $q['course']['title'],
                 'start' => $this->convertJalaliToGregorianWithTime($startDate, $startHour),
                 'end' => $this->convertJalaliToGregorianWithTime($endDate, $endHour),
