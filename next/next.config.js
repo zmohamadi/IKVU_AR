@@ -5,7 +5,7 @@ const nextConfig = {
     // useFileSystemPublicRoutes: false,
     // experimental: { esmExternals: true },
     images: {
-        domains: ['127.0.0.1', 'lmsapi.ikvu.ac.ir', 'demoapi.lms5.iki.ac.ir']
+        domains: ['127.0.0.1','lmsapi.ictvu.com']
     },
     webpack: (config) => {
         config.resolve.alias.canvas = false;
