@@ -155,9 +155,7 @@ return [
             'required' => 'النسبة مطلوبة',
         ],
         'lname_ar' => [
-            'required' => '
-
-الكنية مطلوبة',
+            'required' => 'الكنية مطلوبة',
         ],
         'lname_en' => [
             'required' => 'Last name is required',

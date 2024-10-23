@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { useLang } from "@/lib/lang";
+import { Toast } from '@/Theme/Midone/Utils/Toast';
 import { usePathname, useRouter } from 'next/navigation';
 import { useData, useFormRefs, Input, Textarea, Button, ButtonContainer, CheckBox, DatePicker, SelectTail, Radio, Box, Frame } from "@/Theme/Midone/Forms";
 import { Select } from "@/Theme/Midone/Forms/Select";
@@ -119,7 +120,7 @@ export function Form({ laraPath, id, course, nextPath = "" }) {
             }
             else
             {
-                alert(Lang("public.text_select_student"));
+                Toast.warning(Lang('public.text_select_student'), Lang('public.dear_user'), 5000);
                 setStudentSelection([]);
                 setDisplaySelect(false);
                 setSelectFor(1)
@@ -154,7 +155,9 @@ export function Form({ laraPath, id, course, nextPath = "" }) {
                             </div>
                             <Radio className="mt-3" label="text_assignment_label" id="select" refItem={[component, `selectFor`]} defaultValue={selectFor}
                                 // key={"selectFor-"+selectFor}
-                                data={selected} onChange={(e) => handleStudentSelection(e)} required key={"selectFor-"+Math.random()} />
+                                data={selected} 
+                                onChange={(e) => handleStudentSelection(e)} 
+                                required key={"selectFor-"+Math.random()} />
                             {displaySelect?
                                 <SelectTail refItem={[component, "students"]} defaultValue={component?.state?.info?.for_students} multiple={true} required="true" key={"student"+studentSelection?.length+Math.random()} >
                                     {studentSelection?.map((student, index)=>{
