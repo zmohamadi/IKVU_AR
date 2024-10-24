@@ -1,4 +1,5 @@
 <?php
+
 return [
     /*
     |--------------------------------------------------------------------------
@@ -179,8 +180,129 @@ return [
             'required' => 'Text is required',
         ],
         'description_fa' => [
-            'required' => 'الوصف مطلوب',
+            'required' => 'توضیح الزامیست',
+        ],
+        'description_ar' => [
+            'required' => 'وصف اجباری',
+        ],
+        'description_en' => [
+            'required' => 'description required',
+        ],
+        'summary_fa' => [
+            'required' => 'خلاصه الزامیست',
+        ],
+        'summary_ar' => [
+            'required' => 'ملخص اجباری',
+        ],
+        'summary_en' => [
+            'required' => 'summary required',
         ],
         // Add more translations as needed
+    ],
+    
+    /*
+    |--------------------------------------------------------------------------
+    | Custom Validation Attributes
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines are used to swap attribute place-holders
+    | with something more reader friendly such as E-Mail Address instead
+    | of "email". This simply helps us make messages a little cleaner.
+    |
+    */
+
+    'attributes' => [
+        'name'                    => 'الإسم',
+        'lname'                   => 'النسبة',
+        'username'                => 'اسم المستخدم',
+        'password'                => 'كلمة المرور',
+        'password_repeat'         => 'تأكيد كلمة المرور',
+        'order*'                   => 'ترتيب',
+        'title'                   => 'عنوان',
+        'label'                   => 'ملصق',
+        'day'                     => 'یوم',
+        'month'                   => 'الشهر',
+        'year'                    => 'عام',
+        'hour'                    => 'الساعة',
+        'minute'                  => 'دقيقة',
+        'second'                  => 'ثواني',
+        'identi_code'             => 'رقم الهوية الوطنية',
+        'gender_id'               => 'الجنس',
+        'mobile'                  => 'موبايل',
+        'tel'                     => 'هاتف',
+        'phone'                   => 'هاتف',
+        'address'                 => 'عنوان',
+        'email'                   => 'البريد الإلكتروني',
+        'about'                   => 'حول',
+        'gender'                  => 'الجنس',
+        'role_id'                 => 'دور',
+        'role'                    => 'دور',
+        'pic'                     => 'صورة الملف الشخصي',
+        'image'                   => 'صورة',
+        'logo'                    => 'شعار',
+        'icon'                    => 'أيقونة',
+        'text'                    => 'نص',
+        'description'             => 'الوصف',
+        'summary'                 => 'ملخص',
+        'dir'                     => 'ترتيب',
+        'symbol'                  => 'عنوان مختصر',
+        'num'                     => 'عدد',
+        'group_id'                => 'مجموعة',
+        'code'                    => 'رمز',
+        'view'                    => 'عرض',
+        'subject_id'              => 'الموضوع',
+        'parent_subject_id'       => 'موضوع الوالد',
+        'category_id'             => 'فئة',
+        'parent_category_id'      => 'فئة الوالد',
+        'video'                   => 'فيديو',
+        'full_name'               => 'الإسم & النسبة',
+        'latin_name'              => 'الاسم اللاتيني',
+        'reply'                   => 'الجواب',
+        'title2'                  => 'العنوان الثاني',
+        'title_link'              => 'عنوان الرابط',
+        'link'                    => 'رابط',
+        'image_gallery'           => 'گالری صورة',
+        'video_gallery'           => 'گالری فيديو',
+        'new_password'            => 'كلمة مرور جديدة',
+        'new_password_confirmation' => 'كلمة مرور جديدة',
+        'create_date'             =>'تاریخ ثبت',
+        'parent_id'               => 'الوالد',
+        'second_title'            => 'العنوان الثاني',
+        'seo_title'               => 'عنوان كبار المسئولين الاقتصاديين',
+        'seo_keywords'            => 'الكلمات الرئيسية لكبار المسئولين الاقتصاديين',
+        'seo_description'         => 'شرح تحسين محركات البحث',
+        'thumbnail'               => 'برجمة',
+        'confirm_id'              => 'تأكيد',
+        'bg'                      => 'راية',
+        '*title_fa*'              => 'عنوان',
+        'link_*'                  => 'وصلة',
+        'group_id*'               => 'مجموعة',
+        'sender_name'             => 'اسم المرسل',
+        'sender_email'            => 'البريد الإلكتروني للمرسل',
+        'comment'                 => 'رأي',
+        'duration'                => 'مدة',
+        'start_date'              => 'تاريخ البدء',
+        'expire_date'             => 'تاريخ الانتهاء',
+        'end_date'                => 'تاريخ الانتهاء',
+        'score*'                  => 'نتيجة',
+        'response'                => 'الجواب',
+        'semester'                => 'الفصل الدراسي',
+        'start_time_date'         => 'تاريخ البدء والوقت',
+        'end_time_date'           => 'تاريخ ووقت الانتهاء',
+        'less_id'                 =>'معرف الدورة',
+        'system_id'               =>'النظام',
+        'sender'                  =>'مرسل',
+        'receiver'                =>'المتلقي',
+        'receivers'               =>'المستلمون',
+        'date'                    =>'تاریخ',
+        'group_code'              =>'مجموعة',
+        'start_hour'              =>'وقت البدء',
+        'lastname'                =>'النسبة',
+        'firstname'               =>'الإسم',
+        'photo'                   =>'صورة',
+        'teacher_person_id'       =>'استاد',
+        'resume'                  =>'السيرة الذاتية',
+        'studentID'               =>'رقم الطلاب',
+        'codemeli'                => 'رقم الهوية الوطنية',
     ],
 ];
